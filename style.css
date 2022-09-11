@@ -37,22 +37,23 @@ body{
   align-items: center;
   overflow: hidden;
   transform: hidden;
-  transition: width 0.5s, left 0.5s,;
+  transition: width 0.5s, left 0.5s;
 }
 .navigation.active
 {
   width: 0;
-  
+ 
 }
 
 .navigation ul 
 {
   position: relative;
   top: 0;
-  left: 0;
-  width: 20px 40px;  
+  left: 0;  
+  padding: 20px 40px;  
   
 }
+
 .navigation ul li{
   position: relative;
   width: 100%;
@@ -103,6 +104,7 @@ body{
 .navigation ul li a:active {
   transform: translateY(-1px);
   
+  
 }
 .navigation ul li a:hover
 {
@@ -116,12 +118,14 @@ body{
   left: 300px;
   background: rgb(83, 83, 147);
   min-height: 100vh;
+  
+  
 }
 .main.active
 {
   width: calc(100% - 0px);
   left: 0px;
-  transition: width 0.5s, left 0.5s;
+  transition: width 0.5s, left 0.5s;    
   
 }
 .main .topbar
@@ -143,7 +147,7 @@ body{
 .main .topbar.active
 {
   width: calc(100% - 0px);
-  left: 0px;
+  left: 0px;  
   
 }
 .main .topbar .logo
@@ -712,26 +716,25 @@ img
 
 /* Now. make it responsive */
 
-@media (max-width: 992px)
+@media (max-width: 990px)
 {
-  .navigation 
-  {
-    left: -100%;
+  .navigation   {
+    
+    left: -100%;       
+    
   }
 
   .navigation.active
   {
     left: 0;
-    width: 100%;    
+    width: 100%;          
   }
   .main 
   {
     width: 100%;    
     left: 0;
   }
-  .main.active {
-    left: 100%;
-  }
+  
   .main .topbar
   {
     width: 100%;
@@ -784,7 +787,16 @@ img
 
 @media (max-width: 767px)
 {
-  .servises .content
+  .proyects h1 {
+    width: 50%;
+    text-align: center;
+  }
+  .navigation.active
+  {
+    width: 100%;   
+    z-index: 1000;   
+  }
+   .servises .content
   {
     grid-template-columns: repeat(1,1fr);
   }
