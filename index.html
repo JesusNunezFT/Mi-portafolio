@@ -280,7 +280,7 @@
               <img src="/photos/contador2-500x500.jpg" alt="">
             </div>
             <div class="textBx">              
-              <a href="https://github.com/JesusNunezFT/contador-de-click-react" target="_blank"><div class="textBx"><h3>Contador de Clicks</h3></div></a>
+              <a href="https://contadordeclickreact.netlify.app" target="_blank"><div class="textBx"><h3>Contador de Clicks</h3></div></a>
             </div>
           </div>
 
@@ -289,9 +289,19 @@
               <img src="/photos/checklist.jfif" alt="">
             </div>
             <div class="textBx">              
-              <a href="https://github.com/JesusNunezFT/aplicacion-react-tareas" target="_blank"><div class="textBx"><h3>Aplicacion de Tareas</h3></div></a>
+              <a href="https://listatareasreact.netlify.app" target="_blank"><div class="textBx"><h3>Aplicacion de Tareas</h3></div></a>
             </div>
           </div>
+
+          <div class="workBx">
+            <div class="imgBx">
+              <img src="/photos/busqueda.png" alt="">
+            </div>
+            <div class="textBx">              
+              <a href="https://buscadordeperfilconreact.netlify.app/" target="_blank"><div class="textBx"><h3>Aplicacion de Tareas</h3></div></a>
+            </div>
+          </div>
+
 
 
 
@@ -309,7 +319,7 @@
         <div class="content">
           <div class="testimonialsBox">
             <div class="imgBx">
-              <img src="https://pps.whatsapp.net/v/t61.24694-24/119162062_332046424877943_4654506095538927215_n.jpg?ccb=11-4&oh=01_AVx1prgBRR2lCC9MeKWfVY1ChuIUAKc3jLmAtpRsxqFn1w&oe=63280006" alt="" class="user1">
+              <img src="/photos/romero.jpg" alt="" class="user1">
             </div>
             <p>" Jesús Nuñez es muy atento a los detalles en el trabajo, Siempre está investigando y proponiendo soluciones. No se cansa fácilmente, y logra todo lo que se le encarga. Se comunica de una manera bastante asertiva y eficaz. Recomendado al 100%. "</p>
             <h4>Eduardo Romero<br><span>Full Stack Developer</span></h4>
@@ -351,20 +361,20 @@
         </div>
         <div class="contactForm">
           <div class="row">
-            <input type="text" name="name" placeholder="First Name">
-            <input type="text" name="first" placeholder="Last Name">
+            <input id="name" type="text" name="name" placeholder="First Name">
+            <input id="lastname" name="lastname" type="text"  placeholder="lastname">
           </div>
 
-          <div class="row">
-            <input type="text" name="email" placeholder="Email address">
-            <input type="text" name="mobile" placeholder="Mobile No.">
+          <div class="row" >
+            <input id="email" type="text" name="email" placeholder="Email address">
+            <input id="mobile" type="text" name="mobile" placeholder="Mobile No.">
           </div>
 
           <div class="row2">
-            <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="message"></textarea>
           </div>
           <div class="row2">
-            <input type="submit" value="send">
+            <input id="send" type="submit" value="send">
           </div>
         </div>
       </section>
@@ -377,32 +387,12 @@
   </div>
 
     
-
-  <script>
-    let toggle = document.querySelector('.toggle');
-    let topbar = document.querySelector('.topbar');
-    let navigation = document.querySelector('.navigation');
-    let main = document.querySelector('.main');
-
-    toggle.onclick = function(){
-      toggle.classList.toggle('active');
-      topbar.classList.toggle('active');
-      navigation.classList.toggle('active');
-      main.classList.toggle('active');
-    }
-
-    //now, we fix menu active class issue for mobile devices
-
-    function toggleMenu(){
-      let navigation = document.querySelector('.navigation');
-      let main = document.querySelector('.main');
-      navigation.classList.remove('active');
-      main.classList.remove('active');
-    }
+  
+  <script src="app.js"></script>
 
     
-  </script>
-
+ 
+  
   
   
 </body>

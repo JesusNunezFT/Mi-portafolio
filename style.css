@@ -32,6 +32,7 @@ body{
   height: 100%;
   border-right: 1px solid rgba(246, 244, 244, 0.764);  
   background-image: url(./photos/hexagonales.webp);
+  background-position: center center fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,7 +136,7 @@ body{
   width: calc(100% - 300px);
   left: 300px;
   background: rgb(30, 30, 38);
-  border-bottom: 2px solid rgba(247, 243, 243, 0.892);
+  border-bottom: 1px solid rgba(247, 243, 243, 0.892);
   height: 60px;
   padding: 0 40px;
   display: flex;
